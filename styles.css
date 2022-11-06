@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  border: 0;
+
+}
+
+/*body styling*/
+
+body{
+  display: block;
+  text-align: center;
+  font-family: 'Arial Unicode MS', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  background: #eee;
+}
+
+/*image styling*/
+
+#img-div{
+  background: #A30000;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+#img-caption{
+  margin: 15px 0 5px 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#image{
+  height: auto;
+}
+
+/*timeline styling*/
+
+#timeline{
+  line-height: 3;
+  margin: 0 auto 50px auto;
+}
+
+/*quote styling*/
+.quote{
+  text-align: right;
+  margin: 0 auto 50px auto;
+}
+
+/*footer styling*/
+h3{
+  background: #A30000;
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: lightblue;
+}
+a:hover {
+  color: yellow;
+}
+a:active {
+  color: yellow;
+}
