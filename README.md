@@ -101,7 +101,7 @@ The basic properties of the "viewport" <meta> tag include:
 - `minimum-scale`: Controls how much zoom out is allowed on the page. Minimum: 0.1. Maximum: 10. Default: 0.1. Negative values: ignored.
 - `maximum-scale`: Controls how much zoom in is allowed on the page. Any value less than 3 fails accessibility. Minimum: 0.1. Maximum: 10. Default: 10. Negative values: ignored.
 
-***
+
 
 ```html
 <blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">
