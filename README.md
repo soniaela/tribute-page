@@ -6,27 +6,24 @@ This is project requirement on the FreeCodeCamp responsive web design course, sh
 
 - [Guidelines](#guidelines)
 - [Tests to pass](#tests-to-pass)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Code Validator](#code-validator)
-  - [Useful resources](#useful-resources)
+- [Links](#links)
+- [What I learned](#what-i-learned)
+- [Code Validator](#code-validator)
+- [Useful resources](#useful-resources)
 
 
 
 ## Guidelines
 
 1. Your tribute page should have a `main` element with a corresponding `id` of `main`, which contains all other elements
-
-1. You should see an element with an `id` of `title`, which contains a string (i.e. text), that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug")
-2. You should see either a `figure` or a `div` element with an `id` of `img-div`
-3. Within the `#img-div` element, you should see an `img` element with a corresponding `id="image"`
-4. Within the `#img-div` element, you should see an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `#img-div`
-5. You should see an element with a corresponding `id="tribute-info"`, which contains textual content describing the subject of the tribute page
-6. You should see an `a` element with a corresponding `id="tribute-link"`, which links to an outside site, that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of `target` and set it to `_blank` in order for your link to open in a new tab
-7. Your `#image` should use `max-width` and `height` properties to resize responsively, relative to the width of its parent element, without exceeding its original size
-8. Your `img` element should be centered within its parent element
+2. You should see an element with an `id` of `title`, which contains a string (i.e. text), that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug")
+3. You should see either a `figure` or a `div` element with an `id` of `img-div`
+4. Within the `#img-div` element, you should see an `img` element with a corresponding `id="image"`
+5. Within the `#img-div` element, you should see an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `#img-div`
+6. You should see an element with a corresponding `id="tribute-info"`, which contains textual content describing the subject of the tribute page
+7. You should see an `a` element with a corresponding `id="tribute-link"`, which links to an outside site, that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of `target` and set it to `_blank` in order for your link to open in a new tab
+8. Your `#image` should use `max-width` and `height` properties to resize responsively, relative to the width of its parent element, without exceeding its original size
+9. Your `img` element should be centered within its parent element
 
 
 ## Tests to pass
@@ -57,18 +54,9 @@ This is project requirement on the FreeCodeCamp responsive web design course, sh
 - Solution URL: https://soniaela.github.io/tribute-page/
 
 
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-
 
 ### What I learned
 
-To see how you can add code snippets, see below:
 
 ```html
 <html lang="en" dir="ltr">
@@ -80,6 +68,7 @@ This global attribute is an enumerated attribute that indicates the directionali
 - `rtl` (right to left)
 - `auto` uses a basic algorithm as it parses the characters inside the element until it finds a character with a strong directionality, then applies that directionality to the whole element.
 
+***
 
 ```html
 <html lang="en" dir="ltr">
@@ -112,6 +101,7 @@ The basic properties of the "viewport" <meta> tag include:
 - `minimum-scale`: Controls how much zoom out is allowed on the page. Minimum: 0.1. Maximum: 10. Default: 0.1. Negative values: ignored.
 - `maximum-scale`: Controls how much zoom in is allowed on the page. Any value less than 3 fails accessibility. Minimum: 0.1. Maximum: 10. Default: 10. Negative values: ignored.
 
+***
 
 ```html
 <blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">
@@ -127,6 +117,7 @@ This is my first time working with quotes, so I decided to see if there was a mo
 >
 
 Example from MDN Web Docs:
+  
 ```html
 <figure>
     <blockquote cite="https://www.huxley.net/bnw/four.html">
@@ -154,7 +145,6 @@ blockquote p::before {
 blockquote p::after {
     content: '\201D';
 }
-}
 ```
 
 My quotes had basic CSS element to center the text in italics and that’s it, but after seeing the above clear and elegant example of MDN Web Docs, I decided to add more styling to my project.
@@ -173,7 +163,7 @@ WARNING: Section lacks heading. Consider using h2-h6 elements to add identifying
 
   BEFORE:
   ```html
-<section id='quote-section'>↩
+  <section id='quote-section'>↩
            <figure>↩
             <blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">↩
               <p><em>Remember, "I" before "E", except in Budweiser.</em>↩
@@ -181,11 +171,11 @@ WARNING: Section lacks heading. Consider using h2-h6 elements to add identifying
               <figcaption class='quote'>-Irwin Corey</figcaption>↩
             </blockquote>↩
            </figure> ↩
-```
+  ```
 
   AFTER:
    ```html
-<div id='quote-section'>↩
+  <div id='quote-section'>↩
            <figure>↩
             <blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">↩
               <p><em>Remember, "I" before "E", except in Budweiser.</em>↩
@@ -193,8 +183,8 @@ WARNING: Section lacks heading. Consider using h2-h6 elements to add identifying
               <figcaption class='quote'>-Irwin Corey</figcaption>↩
             </blockquote>↩
            </figure> ↩
-</div>
-```
+  </div>
+  ```
 
 Explanation: as this section did not require any h2-h6 heading, the section was replaced by a <div>. Otherwise, we could have kept the <section> if we had added a h2-morning h6 heading.
 
@@ -203,22 +193,22 @@ ERROR: Element figcaption not allowed as child of element blockquote in this con
 
   BEFORE:
   ```html
-<blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">↩
+  <blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">↩
               <p><em>Remember, "I" before "E", except in Budweiser.</em>↩
               </p>↩
               <figcaption class='quote'>-Irwin Corey</figcaption>↩
             </blockquote>↩
-</div>
-```
+  </div>
+  ```
 
   AFTER:
   ```html
-<blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">↩
+  <blockquote cite="https://www.azquotes.com/quote/555131?ref=budweiser">↩
               <p><em>Remember, "I" before "E", except in Budweiser.</em>↩
               </p>↩
               <p class='quote'>-Irwin Corey</p>↩
             </blockquote>↩
-```
+  ```
   
   
   Explanation: <figcaption> element was replaced by <p> element. 
@@ -232,7 +222,5 @@ ERROR: Element figcaption not allowed as child of element blockquote in this con
 
 - [Example resource 1](https://www.example.com) 
 - [Example resource 2](https://www.example.com) 
-
-
 
 
