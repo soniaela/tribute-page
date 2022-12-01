@@ -151,7 +151,8 @@ To change the indentation applied to the quoted text, use the CSS `margin-left` 
 To include shorter quotes inline rather than in a separate block, use the <q> (Quotation) element.
 
 
-### Code Validator
+
+  ### Code Validator
 
 The first HTML validator run yielded 2 warnings and 2 errors:
 
@@ -184,6 +185,7 @@ WARNING: Section lacks heading. Consider using h2-h6 elements to add identifying
 
 Explanation: as this section did not require any h2-h6 heading, the section was replaced by a <div>. Otherwise, we could have kept the <section> if we had added a h2-morning h6 heading.
 
+    ***
 
 ERROR: Element figcaption not allowed as child of element blockquote in this context. (Suppressing further errors from this subtree.)
 
