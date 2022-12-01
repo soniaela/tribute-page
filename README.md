@@ -112,12 +112,7 @@ The basic properties of the "viewport" <meta> tag include:
 ```
 
 This is my first time working with quotes, so I decided to see if there was a more semantically inclined element to use for this type of content (other than div).
-
-
-
-The <blockquote> HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the `cite` attribute, while a text representation of the source can be given using the <cite> element.
-
-
+The `blockquote` HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the `cite` attribute, while a text representation of the source can be given using the <cite> element.
 Example from MDN Web Docs:
   
 ```html
